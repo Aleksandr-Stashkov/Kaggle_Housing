@@ -4,6 +4,8 @@ The goal of this project is to generate the best prediction of the final price o
 
 This repository contains an advanced Machine Learning pipeline implemented in Python. The project was developed for the **Housing Prices Competition for Kaggle Learn Users**, focusing on structured feature transformations, custom scikit-learn transformers, target encoding, and ensemble regression. Rather than relying on basic automated preprocessing, this notebook implements a meticulous, data-driven approach leveraging feature hierarchies, multi-stage column transformers, and robust data isolation to eliminate data leakage.
 
+🏆 **Best Leaderboard Score:** 14872.82234
+
 ## 🛠️ Tech Stack & Libraries
 **Language:** Python
 
