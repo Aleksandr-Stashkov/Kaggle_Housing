@@ -4,7 +4,7 @@ The goal of this project is to generate the best prediction of the final price o
 
 This repository contains an advanced Machine Learning pipeline implemented in Python. The project was developed for the **Housing Prices Competition for Kaggle Learn Users**, focusing on structured feature transformations, custom scikit-learn transformers, target encoding, and ensemble regression. Rather than relying on basic automated preprocessing, this notebook implements a meticulous, data-driven approach leveraging feature hierarchies, multi-stage column transformers, and robust data isolation to eliminate data leakage.
 
-🏆 **Best Leaderboard Score:** 14872.82234
+🏆 **Best Leaderboard Score:**  13948.46082
 
 ## 🛠️ Tech Stack & Libraries
 **Language:** Python
@@ -43,7 +43,7 @@ The data is processed through an advanced, granular `ColumnTransformer` topology
 **Strict Structural Encoding:** Ordinal categories (like qualities and conditions) were manually mapped via a strict hierarchical `OrdinalEncoder` setup to respect data weightings, while remaining qualitative descriptors were mapped via `OneHotEncoder`.
 
 ### 4. Model Optimization & Cross-Validation
-Built a final, nested `Pipeline` tracking feature flows into a fine-tuned **Random Forest Regressor** configured with `n_estimators=375` and `max_depth=33`.
+Built a final, nested `Pipeline` tracking feature flows into the fine-tuned model. Optimized both **Random Forest** and **XGBoost Regressor** models with the latter showing the best score in the end.
 
 Performance validation was governed via robust cross-validation tracking `neg_mean_absolute_error` to evaluate true out-of-sample scaling.
 
@@ -52,7 +52,6 @@ Performance validation was governed via robust cross-validation tracking `neg_me
 ## 🔬 Exploratory & Development Insights
 During the analytical evaluation phase, several iterative methodologies were prototyped, tested, and recorded within the codebase for model exploration:
 
-**Alternative Architectures:** Evaluated `XGBoost` (`xgb`) gradient boosting models against the ensemble random forest structure to analyze performance ceilings.
 
 **Hyperparameter Sweeps:** Conducted parametric sweeps over continuous ranges to find optimal variance-bias tradeoffs.
 
