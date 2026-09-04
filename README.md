@@ -17,7 +17,7 @@ This repository contains an advanced Machine Learning pipeline implemented in Py
 
 **Machine Learning & Pipelines:** `scikit-learn` (`RandomForestRegressor`, `Pipeline`, `ColumnTransformer`)
 
-**Gradient Boosting (Evaluated):** `xgboost`
+**Gradient Boosting:** `xgboost`
 
 ## 🚀 Pipeline Architecture
 ### 1. Robust Outlier Mitigation
